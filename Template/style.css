@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0; 
+} 
+
+html{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    min-height: 97.5vh; 
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.body-container{
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: "0 auto";
+    padding: 20px 0;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.language-container{
+    display: flex;
+}
+
+.language-container a{
+    display: block;
+    font-size: large;
+    margin: 0 5px;
+    text-decoration: none;
+}
+
+.language-container a:hover{
+    color: green;
+    transition: ease-out;
+    transition-duration: 1s;
+}
+
+.parent-name{
+    background-color: lightgreen;
+    margin: 3px;
+    padding: 5px;
+}
+
+.children-school-names{
+    display: flex;
+    justify-content: space-between;
+}
+
+.children-school-names *{
+    background-color: lightgreen;
+    width: 50%;
+    margin: 3px;
+    padding: 5px;
+    border: 0;
+}
+
+.alert-board{
+    background-color: bisque;
+    margin: 3px;
+    padding: 5px;
+    text-align: center;
+}
+
+/* Put the rest of the code here for css */
+
+
+
+
+
+/* Put the rest of the code here for css */
+
+
+.footer{
+    width: 100%;
+    height: 120px;
+    margin: 3px;
+}
+
+.tabs{
+    display: flex;
+    max-width: 315px;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.tabs a{
+    padding: 1rem;
+    background-color: wheat;
+    text-decoration: none;
+    text-align: center;
+}
+
+.contact-info{
+    max-width: 315px;
+    margin: 10px auto;
+}
