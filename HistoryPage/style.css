@@ -153,6 +153,10 @@ body{
     align-items: center;
 }
 
+.calendars-container input{
+    width: 100px;
+}
+
 .calendars-container p{
     margin: 0 5px;
 }
