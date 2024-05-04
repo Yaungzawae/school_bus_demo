@@ -10,54 +10,62 @@
 </head>
 
 <body>
-    <div class="body-container">
-        <div class="navbar">
-            <h1>Logo</h1>
-            <div class="language-container">
-                <a href="/">Th</a>
-                <a href="/">Fr</a>
-                <a href="/">En</a>
+        <nav>
+            <div class="navbar">
+                    <img class="logo" src="/assets/logo.png"/>
+                    <div class="language-container">
+                        <div><a href="/">En</a></div>
+                        <div><a href="/">Th</a></div>
+                        <div><a href="/">Fr</a></div>
+                    </div>
             </div>
-        </div>
-        <div class="details">
-            <div class="parent-name">
-                <p>Parent Name: Surname</p>
+        </nav>
+        <div class="body-container">
+            <div class="details">
+                <div class="parent-name">
+                    <p>Parent Name: Surname</p>
+                </div>
+                <div class="children-school-names">
+                    <select name="child-name" id="child-name">
+                        <option value="volvo" selected="selected" disabled>Child's Name</option>
+                        <option value="saab">Child1</option>
+                        <option value="opel">Child2</option>
+                        <option value="audi">Child3</option>
+                    </select>
+                    <p> School Name: Name</p>
+                </div>
+                <div class="alert-board">
+                    <p>Any Message! Alert Board!!!!!</p>
+                </div>
             </div>
-            <div class="children-school-names">
-                <select name="child-name" id="child-name">
-                    <option value="volvo" selected="selected" disabled>Child's Name</option>
-                    <option value="saab">Child1</option>
-                    <option value="opel">Child2</option>
-                    <option value="audi">Child3</option>
-                </select>
-                <p>School Name: Name</p>
+            <div class="general-details">
+                <div>
+                    <p>Home</p>
+                    <p>General Info</p>
+                </div>
+                <p>xx/xx/xx</p>
             </div>
-            <div class="alert-board">
-                <p>Any Message! Alert Board!!!!!</p>
+    
+            <div class="bus-info">
+                <div>
+                    <p>Leaving Home : Time (fix time)</p>
+                    <a class="clickable-text" href="/BusDetailPage/BusDetailPage.html">Bus no xx</a>
+                    <p class="clickable-text">Gps</p>
+                    <p class="clickable-text">Cctv</p>
+                </div>
             </div>
-        </div>
-        <div class="general-details">
-            <div>
-                <p>Home</p>
-                <p>General Info</p>
+            <div class="bus-info">
+                <div>
+                    <p>Leaving Home : Time (fix time)</p>
+                    <a class="clickable-text" href="/BusDetailPage/BusDetailPage.html">Bus no xx</a>
+                    <p class="clickable-text">Gps</p>
+                    <p class="clickable-text">Cctv</p>
+                </div>
             </div>
-            <p>xx/xx/xx</p>
+            
+
         </div>
 
-        <div class="bus-info">
-            <p>Leaving Home : Time (fix time)</p>
-            <a class="clickable-text" href="/BusDetailPage/BusDetailPage.html">Bus no xx</a>
-            <p class="clickable-text">Gps</p>
-            <p class="clickable-text">Cctv</p>
-        </div>
-        <div class="bus-info">
-            <p>Leaving Home : Time (fix time)</p>
-            <a class="clickable-text" href="/BusDetailPage/BusDetailPage.html">Bus no xx</a>
-            <p class="clickable-text">Gps</p>
-            <p class="clickable-text">Cctv</p>
-        </div>
-
-    </div>
     <div class="footer">
         <div class="tabs">
             <a href="/index.html">Home</a>
@@ -65,9 +73,12 @@
             <a href="/HistoryPage/HistoryPage.html">Bus History</a>
         </div>
         <div class="contact-info">
-            <p>Contact Us: xxxxxxx xxxxxxx xxxxxxx xxxxxx</p>
-            <p>Hotline : xxxxx xxxxx</p>
-            <p>Line: xxxxxxxx</p>
+            <img class="logo" src="/assets/logo.png"/>
+            <div>
+                <p>Contact Us: xxxxxxx xxxxxxx</p>
+                <p>Hotline : xxxxx xxxxx</p>
+                <p>Line: xxxxxxxx</p>
+            </div>
         </div>
     </div>
 </body>

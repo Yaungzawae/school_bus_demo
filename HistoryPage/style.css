@@ -3,46 +3,58 @@
     padding: 0; 
 } 
 
-html{
-    margin: 0;
-    padding: 0;
-}
-
-body{
-    min-height: 97.5vh; 
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 1rem;
-}
-
-.body-container{
-    max-width: 800px;
+nav{
     width: 100%;
-    margin: 0 auto;
-    position: relative;
+    height: 75px;
+    background-color: "#FCFEFF";
+    border-bottom: solid 1px;
 }
 
 .navbar{
     display: flex;
+    max-width: 1000px;
     justify-content: space-between;
     align-items: center;
-    margin: "0 auto";
-    padding: 20px 0;
-    max-width: 1000px;
-    margin: auto;
+    margin: 0 auto;
+    height: 100%;
+    padding: 0 20px;
+}
+
+.logo{
+    width: 75px;
+    height: 75px;
+}
+
+body{
+    min-height: 100vh; 
+    display: flex;
+    flex-direction: column;
 }
 
 .language-container{
     display: flex;
+    justify-content: flex-end;
 }
 
-.language-container a{
+.language-container div{
+    height: 25px;
+    width: 40px ;
+    margin: auto 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: solid 1px black;
+}
+
+.language-container div:last-child{
+    border-right: none;
+}
+
+.language-container div a{
     display: block;
     font-size: large;
-    margin: 0 5px;
     text-decoration: none;
+    color: #03709C;
 }
 
 .language-container a:hover{
@@ -51,10 +63,29 @@ body{
     transition-duration: 1s;
 }
 
+.body-container{
+    max-width: 800px;
+    width: 90%;
+    margin: 20px auto;
+    flex: 1;
+}
+
+
+.details{
+    margin: 40px 0
+}
+
+
 .parent-name{
-    background-color: lightgreen;
-    margin: 3px;
-    padding: 5px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    border: solid 1px #03709C;
+    background-color: white;
+}
+
+.parent-name p{
+    margin-left: 5px;
 }
 
 .children-school-names{
@@ -63,27 +94,51 @@ body{
 }
 
 .children-school-names *{
-    background-color: lightgreen;
+    border: solid 1px #03709C;
+    background-color: white;
+    margin: 6px 0;
     width: 50%;
-    margin: 3px;
-    padding: 5px;
-    border: 0;
+    display: flex;
+    align-items: center;
+
+}
+
+.children-school-names *:first-child{
+    margin-right: 4px;
+    height: 32px;
+}
+
+.children-school-names *:last-child{
+    padding-left: 4px;
+    height: 30px;
 }
 
 .alert-board{
-    background-color: bisque;
-    margin: 3px;
-    padding: 5px;
-    text-align: center;
+    background-color: #03709C;
+    color: white;
+    font-weight: 100;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-/* Put the rest of the code here for css */
+.general-details{
+    margin: 20px 3px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Put your code here */
 
 .calendar-input-form{
-    border: solid 1px;
-    padding: 0px 5px;
+    border: solid 2px #172E6E;
+    border-radius: 50px 15px;
     margin-top: 30px;
     margin-bottom: 10px;
+    margin-bottom: 20px;
+    padding: 20px 10px 
 }
 
 .calendar-wrapper{
@@ -105,10 +160,11 @@ body{
 .submit{
     margin-left: auto;
     display: block;
-    background-color: lightgreen;
-    padding: 3px 5px;
+    background-color: rgba(23,46,110,255);
+    padding: 5px 10px;
     border: none;
     border-radius: 5%;
+    color: white;
 }
 
 .submit:hover{
@@ -117,30 +173,57 @@ body{
 }
 
 
-/* Put the rest of the code here for css */
 
+/* Put your code here */    
 
 .footer{
     width: 100%;
-    height: 120px;
-    margin: 3px;
+    height: 160px;
 }
+
 
 .tabs{
     display: flex;
-    max-width: 315px;
-    margin: auto;
+    max-width: 350px;
+    margin: 0 auto 20px;
     justify-content: space-between;
 }
 
 .tabs a{
-    padding: 1rem;
-    background-color: wheat;
+    height: 40px;
+    width: 100px;
+    background: linear-gradient(90deg,rgba(3,112,156,255) , rgba(23,46,110,255));
+    color: white;
     text-decoration: none;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5%;
+    transition: transform 1s;
+}
+
+.tabs a:hover{
+    background: linear-gradient(180deg,rgba(3,112,156,255) , rgba(23,46,110,255));
+    transform: scale(1.1);
 }
 
 .contact-info{
+    background: linear-gradient(90deg,rgba(3,112,156,255) , rgba(23,46,110,255));
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 30px;
+}
+
+.contact-info div{
     max-width: 315px;
-    margin: 10px auto;
+    height: 75px;
+    color: white;
+    margin-left: 20px;
+    font-weight: 100;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
